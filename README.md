@@ -1,33 +1,38 @@
-# Load_Balancing
+
 Load Balancing Strategies for Distributed Systems
-This project demonstrates various load balancing techniques implemented with NGINX for a globally distributed system. Each region uses a different load balancing strategy tailored to its specific requirements.
+This project demonstrates multiple load balancing techniques using NGINX to manage traffic across a globally distributed system. Each region applies a strategy best suited to its specific requirements, offering a practical comparison of modern load balancing approaches.
 
 Features
-Multiple load balancing strategies for different regions
+Multiple load balancing strategies tailored to different global regions
 
-Dynamic server selection based on real-time metrics
+Dynamic server selection based on real-time performance metrics
 
-Health monitoring and adaptive routing
+Health monitoring and adaptive routing for improved resilience
 
-Q-learning based intelligent routing (Australia region)
+Q-learning-based intelligent routing (Australia)
 
-Latency-based routing (South America region)
+Latency-based routing (South America)
 
-Weight-based routing (Asia region)
+Weight-based routing (Asia)
 
-Traditional round-robin and least-conn strategies
+Traditional round-robin and least-connections strategies
 
-Load Balancing Strategies
-Region	Strategy	Configuration File	Key Features
-Asia	Weight-based selection	nginx-asia.conf	Dynamic weights adjusted by health status
-Australia	Q-learning reinforcement	nginx-au.conf	Machine learning approach with exploration/exploitation
-Europe	Least connections	nginx-eu.conf	Traditional least connections algorithm
-South America	Latency-based	nginx-sa.conf	Routes to server with lowest measured latency
-United States	Round-robin	nginx-us.conf	Simple round-robin distribution
+
+
+| Region            | Strategy                 | Configuration File | Key Features                                                    |
+| ----------------- | ------------------------ | ------------------ | --------------------------------------------------------------- |
+| **Asia**          | Weight-based selection   | `nginx-asia.conf`  | Dynamic weights adjusted by server health status                |
+| **Australia**     | Q-learning reinforcement | `nginx-au.conf`    | Machine learning approach with exploration/exploitation balance |
+| **Europe**        | Least connections        | `nginx-eu.conf`    | Chooses the server with the fewest active connections           |
+| **South America** | Latency-based routing    | `nginx-sa.conf`    | Selects server with the lowest real-time latency                |
+| **United States** | Round-robin              | `nginx-us.conf`    | Evenly distributes requests across all servers                  |
+
 
 Prerequisites
+Ensure the following tools are installed:
+
 Docker
 
 Docker Compose
 
-NGINX 
+NGINX
