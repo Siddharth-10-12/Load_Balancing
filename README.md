@@ -24,7 +24,7 @@ This project demonstrates multiple load balancing techniques using NGINX to mana
 | **United States** | Round-robin              | `nginx-us.conf`    | Evenly distributes requests across all servers                  |
 
 
-Prerequisites
+## Prerequisites
 Ensure the following tools are installed:
 
 Docker
