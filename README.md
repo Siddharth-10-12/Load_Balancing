@@ -1,21 +1,17 @@
 
-Load Balancing Strategies for Distributed Systems
+## Load Balancing Strategies for Distributed Systems
 This project demonstrates multiple load balancing techniques using NGINX to manage traffic across a globally distributed system. Each region applies a strategy best suited to its specific requirements, offering a practical comparison of modern load balancing approaches.
 
-Features
-Multiple load balancing strategies tailored to different global regions
+## Features
 
-Dynamic server selection based on real-time performance metrics
+- Multiple load balancing strategies tailored to different global regions  
+- Dynamic server selection based on real-time performance metrics  
+- Health monitoring and adaptive routing for improved resilience  
+- **Q-learning-based intelligent routing** (Australia)  
+- **Latency-based routing** (South America)  
+- **Weight-based routing** (Asia)  
+- Traditional **round-robin** and **least-connections** strategies  
 
-Health monitoring and adaptive routing for improved resilience
-
-Q-learning-based intelligent routing (Australia)
-
-Latency-based routing (South America)
-
-Weight-based routing (Asia)
-
-Traditional round-robin and least-connections strategies
 
 
 
