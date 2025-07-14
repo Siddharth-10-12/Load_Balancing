@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+</head>
+<body>
+    <h1>Image Gallery</h1>
+    <div>
+        <!-- Dynamically include all images -->
+        <script>
+            const images = [];
+            for (let i = 1; i <= 100; i++) { // Adjust the range based on the number of images
+                images.push(`<img src="images/image${i}.png" alt="Image ${i}" style="width:200px; margin:10px;">`);
+            }
+            document.write(images.join(''));
+        </script>
+    </div>
+</body>
+</html>
